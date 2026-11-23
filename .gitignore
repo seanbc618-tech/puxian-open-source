@@ -1,0 +1,30 @@
+node_modules
+dist
+dist-static
+.output
+.vercel
+.env
+.env.*
+*.log
+.grok/*
+!.grok/app-env.json
+screenshots
+artifacts
+.DS_Store
+
+# Local dictation repro only (do not commit large user audio)
+fixtures/user-upload.mp3
+
+logs/
+
+# Local OMR export tools and untracked weights
+.omr-dev/
+public/models/omr
+
+# Reproducible recognition evaluation media (never shipped in product)
+eval/generated/
+eval/results/
+
+# Python test cache
+__pycache__/
+*.py[cod]

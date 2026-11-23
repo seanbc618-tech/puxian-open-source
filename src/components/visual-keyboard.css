@@ -1,0 +1,73 @@
+.keyboard-dock {
+  position: fixed;
+  z-index: 35;
+  bottom: calc(88px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(calc(100% - 32px), 920px);
+  padding: 6px 12px;
+  background: #f7f3ea;
+  border: 1px solid #ded8cb;
+  border-radius: 12px;
+}
+.visual-keyboard .segmented > button {
+  min-height: 32px;
+}
+.visual-keyboard svg {
+  display: block;
+}
+.app-shell[data-keyboard]:not([data-home-landing]) {
+  padding-bottom: calc(220px + env(safe-area-inset-bottom));
+}
+@media (max-width: 639px) and (max-height: 750px) {
+  .app-shell[data-keyboard]:not([data-home-landing]):not([data-full-score]) #zone-score {
+    flex-basis: clamp(220px, 34dvh, 300px);
+  }
+}
+.app-shell[data-keyboard][data-full-score] .keyboard-dock {
+  bottom: 8px;
+}
+.app-shell[data-keyboard][data-full-score] {
+  padding-bottom: 140px;
+}
+@media (min-width: 640px) and (max-height: 500px) {
+  .keyboard-dock {
+    bottom: calc(64px + env(safe-area-inset-bottom));
+  }
+  .app-shell[data-keyboard]:not([data-home-landing]):not([data-full-score]) {
+    padding-bottom: calc(196px + env(safe-area-inset-bottom));
+  }
+}
+/* Same cascade layer as score highlighting; important declarations in a layer outrank unlayered ones. */
+@layer base {
+  .score-stage.wait-wrong .is-sounding,
+  .score-stage.wait-wrong .is-sounding :is(path, text, ellipse, circle) {
+    color: #b73529 !important;
+    fill: #b73529 !important;
+    stroke: #b73529 !important;
+  }
+}
+/* On portrait phones reserve a compact dock and let the score give the panel room. */
+@media (max-width: 639px) and (min-height: 751px) {
+  .app-shell[data-keyboard]:not([data-home-landing]):not([data-full-score]) { padding-bottom: calc(164px + env(safe-area-inset-bottom)); }
+  .app-shell[data-keyboard]:not([data-home-landing]):not([data-full-score]) #zone-score { flex-basis: 300px; }
+  .app-shell[data-keyboard] .score-head { flex-wrap: nowrap; flex-shrink: 0; }
+  .app-shell[data-keyboard] .score-title-box { flex: 0 0 auto; }
+  .keyboard-dock { padding: 2px 8px; }
+  .visual-keyboard > p { display: none; }
+  .visual-keyboard svg { height: 36px; }
+  .app-shell[data-keyboard]:not([data-home-landing]):not([data-full-score]) .zone-panel { min-height: 200px; }
+}
+@media (max-width: 639px) and (min-height: 751px) {
+  .app-shell[data-keyboard]:not([data-full-score]) { gap: 4px; }
+  .app-shell[data-keyboard]:not([data-full-score]) #zone-score { flex-basis: 316px; }
+  .app-shell[data-keyboard] .score-head { position: relative; gap: 4px; }
+  .app-shell[data-keyboard] .score-title-box { width: calc(100% - 150px); align-self: flex-start; }
+  .app-shell[data-keyboard] .score-title { font-size: 16px; line-height: 22px; max-height: 44px; padding: 8px 0; }
+  .app-shell[data-keyboard] .score-tools .tool-button { position: absolute; top: 0; }
+  .app-shell[data-keyboard] .score-tools .tool-button:last-child { right: 0; }
+  .app-shell[data-keyboard] .score-tools .tool-button:nth-last-child(2) { right: 50px; }
+  .app-shell[data-keyboard] .score-tools .tool-button:nth-last-child(3) { right: 100px; }
+  .app-shell[data-keyboard] .score-tools .segmented[aria-label="谱面视图"] { flex: 1 1 220px; width: auto; }
+  .app-shell[data-keyboard] .score-tools { flex-wrap: nowrap; }
+}

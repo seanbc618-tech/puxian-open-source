@@ -1,0 +1,1 @@
+Vendored unchanged from eval-omr eval/focus-2026-11-16/scripts/geom_from_dets.py (feat/omr-eval-expand-freeze). Pitch/duration parsing is not rewritten here.

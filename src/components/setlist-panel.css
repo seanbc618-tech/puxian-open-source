@@ -1,0 +1,26 @@
+.setlist-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px 12px;
+  border: 1px solid #ddd6c880;
+  border-radius: 12px;
+  background: #ffffff99;
+  color: #1c1916;
+  font-size: 14px;
+  font-weight: 500;
+}
+.setlist-button:disabled {
+  opacity: 0.4;
+}
+.setlist-primary {
+  background: #a44825;
+  border-color: transparent;
+  color: #fff;
+}
+/* Keep the next home section (我的曲子) clear of the open panel. */
+.setlist-manage {
+  margin-bottom: 24px;
+}

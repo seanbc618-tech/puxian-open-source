@@ -1,0 +1,6 @@
+dist
+dist-static
+.output
+.vercel
+ios
+node_modules

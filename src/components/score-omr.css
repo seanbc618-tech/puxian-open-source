@@ -1,0 +1,79 @@
+.omr-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f7f3ea;
+  border: 1px solid #d8d1c5;
+  border-radius: 1rem;
+  overflow-wrap: anywhere;
+}
+.omr-panel p {
+  margin: 0.6rem 0;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+.omr-panel h3 {
+  font-weight: 600;
+}
+.omr-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+.omr-draft {
+  margin-top: 1rem;
+  border-top: 1px solid #d8d1c5;
+  padding-top: 1rem;
+  /* Leave room so the floating transport cannot cover notation or the confirm button. */
+  padding-bottom: 12rem;
+  scroll-margin-top: 8px;
+  scroll-margin-bottom: 176px;
+}
+.omr-draft .omr-notation,
+.omr-draft .omr-actions {
+  scroll-margin-bottom: 176px;
+}
+.omr-notation {
+  overflow: auto;
+  background: #faf8f4;
+  border-radius: 0.5rem;
+}
+.omr-panel progress {
+  width: 100%;
+  accent-color: #31594b;
+}
+
+.omr-source-image {
+  width: 100%;
+  max-height: 34rem;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  background: white;
+}
+@media (min-width: 1000px) {
+  .omr-comparison {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+  .omr-source-image {
+    position: sticky;
+    top: 5rem;
+  }
+}
+.omr-raw pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 16rem;
+  overflow: auto;
+  background: #faf8f4;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+.omr-page-reports {
+  padding-left: 1.25rem;
+  list-style: disc;
+  font-size: 0.875rem;
+}

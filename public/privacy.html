@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>隐私说明 · 谱线</title>
+    <meta name="description" content="乐谱保存在本机。识谱时图片会发到本站，请求结束后删除。不需要账号。" />
+    <link rel="canonical" href="https://818189.xyz/privacy.html" />
+    <style>
+      body { margin: 0; background: #faf8f4; color: #1c1916; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      main { max-width: 40rem; margin: 0 auto; padding: 32px 20px 64px; }
+      a { color: #1f3d3a; }
+      h1 { font-size: 1.75rem; font-weight: 500; }
+      h2 { font-size: 1.1rem; margin-top: 2rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="./">返回谱线</a></p>
+      <h1>谱线如何对待你的谱和图片</h1>
+      <p>这是一份说明，不是登记表。本站没有账号，也不向你收集姓名、邮箱或电话。</p>
+
+      <h2>留在这台设备上</h2>
+      <p>你写的乐谱、本机草稿、歌单、练琴记录、混音和页面设置，写在这台浏览器里。录音、上传的音频和 MIDI 也在浏览器里处理，不上传。多音听写第一次会从本站下载识别模型，音频本身仍留在本机。</p>
+      <p>若本站识谱服务暂时不可用，改在浏览器里识别，图片不上传。那种路径第一次会下载较大的模型，之后缓存在本机。</p>
+
+      <h2>识谱时会发出去的</h2>
+      <p>点识别之后，照片会发到本站的识别接口。PDF 先在浏览器里画成一页一页的图片，发出去的是这些图片。</p>
+      <p>正式服务把图片放在当次请求的临时目录里，请求结束就删除，不论识别成功还是失败。不另存图片，也不把文件名写入存档。因此可以说用完即删。</p>
+      <p>代码里另有一个调试开关：没按正式配置启动时，可以留下最近一张图供本机查看。公开站点的服务单元把这个开关关掉了。</p>
+      <p>服务器的访问日志可能记下时间、来源 IP、请求路径和状态，不含图片内容。同一来源的 IP 会在内存里保留大约 10 分钟，用来限制识别次数，然后丢掉。识别进行时，状态接口只能看到「正在识别」这类阶段，看不到图片。</p>
+
+      <h2>分享与删除</h2>
+      <p>分享链接是你自己复制的地址，谱写在链接里。把链接发给别人，就等于把谱交给他们。本站不为此建档。</p>
+      <p>要删掉这台浏览器里的谱，用首页或编辑器中的本机草稿。没有账号可注销。</p>
+      <p>本站页面不加载第三方统计或广告脚本。</p>
+    </main>
+  </body>
+</html>

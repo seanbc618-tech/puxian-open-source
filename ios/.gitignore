@@ -1,0 +1,13 @@
+App/build
+App/Pods
+App/output
+App/App/public
+DerivedData
+xcuserdata
+
+# Cordova plugins for Capacitor
+capacitor-cordova-ios-plugins
+
+# Cordova's generated widget file. The Capacitor config copy is committed
+# so review can see webDir without a Mac. cap sync rewrites it from capacitor.config.ts.
+App/App/config.xml

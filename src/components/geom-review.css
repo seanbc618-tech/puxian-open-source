@@ -1,0 +1,118 @@
+/* Full-width recognition review and safe score list. Lazy-only; not first-screen. */
+.geom-review {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  background: #f7f3ea;
+  color: inherit;
+  box-sizing: border-box;
+}
+.geom-review-head {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e7e0d3;
+  background: #f7f3eaf7;
+}
+.geom-review-head h2 {
+  margin: 0;
+  flex: 1 1 160px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.geom-review-head p {
+  margin: 0;
+  flex: 1 1 100%;
+  color: #575047;
+  font-size: 13px;
+}
+.geom-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+.geom-review-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
+  padding: 8px 8px 16px;
+}
+.geom-review[data-single-pane] .geom-review-body {
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (max-width: 799px) {
+  .geom-review-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(28dvh, 38dvh) minmax(0, 1fr);
+  }
+  .geom-review[data-single-pane] .geom-review-body {
+    grid-template-rows: minmax(0, 1fr);
+  }
+}
+.geom-review-pane {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #e7e0d3;
+  border-radius: 16px;
+  background: #fffdf8;
+  padding: 10px 10px 16px;
+  box-sizing: border-box;
+}
+.geom-review-pane h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.geom-review-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #faf8f4;
+}
+.geom-review-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee7db;
+}
+.safe-score-view { min-height: 0; }
+.safe-score-summary { margin: 0 0 8px; font-size: 13px; color: #575047; }
+.safe-score-toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+.safe-score-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.safe-score-list > li { margin: 0; }
+.safe-score-row {
+  display: grid;
+  grid-template-columns: 4.5rem 4.5rem minmax(0, 1fr) auto;
+  gap: 8px;
+  width: 100%;
+  min-height: 40px;
+  padding: 6px 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #f0eadf;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+.safe-score-row.is-selected { background: #e8f0ec; }
+.safe-score-t { font-variant-numeric: tabular-nums; color: #575047; }
+.safe-score-more { margin: 8px 0; }

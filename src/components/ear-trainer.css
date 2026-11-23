@@ -1,0 +1,63 @@
+.ear-trainer .segmented + .segmented {
+  margin-top: 8px;
+}
+.ear-answers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(52px, 1fr));
+  gap: 6px;
+  max-width: 420px;
+  margin-top: 10px;
+}
+.ear-answers > button {
+  min-height: 52px;
+  font-size: 22px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.ear-answers > button[data-right] {
+  border-color: #2f7d4f;
+  background: #e5f1e9;
+  color: #1f5c39;
+}
+
+.ear-answers[data-kind="interval"] {
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+}
+.ear-answers[data-kind="interval"] > button {
+  font-size: 16px;
+}
+
+.ear-answers[data-kind="chord"] {
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+}
+.ear-answers[data-kind="chord"] > button {
+  font-size: 16px;
+}
+
+.ear-trainer .segmented[aria-label="练耳内容"] > button {
+  padding: 0 7px;
+}
+.ear-prog-draft {
+  margin: 8px 0 0;
+  min-height: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.ear-answers[data-kind="progression"] {
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+}
+.ear-answers[data-kind="progression"] > button {
+  font-size: 16px;
+}
+
+.ear-trainer .segmented[aria-label="练耳内容"] {
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.ear-answers[data-kind="scale"] {
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+}
+.ear-answers[data-kind="scale"] > button {
+  font-size: 15px;
+}

@@ -1,0 +1,34 @@
+[Unit]
+Description=Puxian geom OMR API (127.0.0.1 only)
+After=network.target
+Documentation=file:///var/lib/puxian-geom/docs/geom-omr-production.md
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/lib/puxian-geom
+Environment=GEOM_PRODUCTION=1
+Environment=GEOM_API_ONLY=1
+Environment=GEOM_KEEP_LAST_JOB=0
+Environment=GEOM_HOST=127.0.0.1
+Environment=GEOM_PORT=18096
+Environment=GEOM_DEVICE=cpu
+Environment=GEOM_VENDOR=/var/lib/puxian-geom/vendor
+Environment=COPISTERIA_ROOT=/var/lib/puxian-geom/vendor/copisteria
+Environment=GEOM_SCRIPT_DIR=/var/lib/puxian-geom/vendor
+Environment=GEOM_WEIGHTS=/var/lib/puxian-geom/vendor/copisteria/models/small/v7_obj-recall-30m_best.pt
+Environment=GEOM_MAX_UPLOAD=20971520
+Environment=GEOM_MAX_CONCURRENT=1
+Environment=GEOM_RATE_MAX=6
+Environment=GEOM_RATE_WINDOW=600
+ExecStart=/var/lib/puxian-geom/venv/bin/python /var/lib/puxian-geom/preview/geom_omr_server.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+# Detector + torch can be memory-heavy; refuse to start if the unit is OOM-killed repeatedly.
+MemoryAccounting=yes
+
+[Install]
+WantedBy=multi-user.target

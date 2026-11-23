@@ -1,0 +1,688 @@
+{
+  "minute-waltz": {
+    "sourceSha256": "f1d8316757c90dde9eba353f49289792d6604a8eec9c0a38a2726be93b36dfa5",
+    "keys": [
+      [
+        0,
+        -5,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "40f71fe3247ba04b67cea94def9e6f2bcf7cdda05ffb4f8496182e9f9b69e678",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "a74fbb6e3ee8d6057ac246176c2e57e08f7a4af42a2a9076014b8119c1d9fe07",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "163ef4563d2c8d00c2fbfb1b2af201aaf96224c0ef59da289bd31acf416c1437",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "d05b007cc57b3cf5a1391af49c8887891f52832a902a351346dfa5f78bb63e88",
+        "match": true
+      },
+      {
+        "voice": "7/2",
+        "sourceDigest": "8a127ec49823ae1f4ba75dd92d1b83cfd0d6f0661fce9ae21f5294da8c364412",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 126
+  },
+  "fille": {
+    "sourceSha256": "9cbf605e4af69a4f1b1ae913d5d08f2be0fb8d76e5c2a07d0c1886c2bfbadac3",
+    "keys": [
+      [
+        0,
+        -6,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "b779e0009a3bf7de1bb5613c2e78ebae8435d49416d17e3a298192d206a48d55",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "9780e02ea1ac27bcfe81c842a042245cac5fdd06efe98563485e50efba2424fb",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "4f73fb30afa5c3747494fdeee2cdf72345d1ef2ccf73f7894de6ce5f95508ef5",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "e45c2fa05b4e9c00b7523cb74650a01782d4d43b065dad99c27e9ee7aea0f356",
+        "match": true
+      },
+      {
+        "voice": "3/1",
+        "sourceDigest": "d015f796544c0ce8252c9b8aa61b5ad150182040f1a57d08fac38828907ae3d6",
+        "match": true
+      },
+      {
+        "voice": "7/2",
+        "sourceDigest": "6b707292ed229d56ae979ad49093b1beb3cc72eff711d21338909daf63b050c7",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 39
+  },
+  "hr2": {
+    "sourceSha256": "1c7c2c108e4e1a9e07bc99443c4e1cf5c362bd839bc95a6e214677ac04e0e7a4",
+    "keys": [
+      [
+        0,
+        4,
+        "major"
+      ],
+      [
+        380.0083333333333,
+        6,
+        "major"
+      ],
+      [
+        914.0083333333333,
+        1,
+        "major"
+      ],
+      [
+        918.0083333333333,
+        1,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "d23a16414cd014cb5bc1645def36cff9a4aabdd969e1ddca8c7d18268203a2db",
+        "match": false,
+        "limitation": "源谱部分和弦延音等语义尚未完全保留；不把此声部计入通过断言"
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "a5775fb638bbbc7e112fee3b605adebaca593ca26a8b4dbfd7d29b1060bf4355",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "f6596ee172b985745381e8c3b03887d4295acdf2cab92b4dec6d2120d0c20792",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "3c4278cd5c4fc773e573eb9ca8516000bfdb4f7c1c27e88739eef5be02c2e57a",
+        "match": true
+      },
+      {
+        "voice": "3/1",
+        "sourceDigest": "701de33ff23fabb6de4c63d45c1fe823b28696eb06231f26d217cfd142b9d444",
+        "match": true
+      },
+      {
+        "voice": "4/1",
+        "sourceDigest": "c9edececb4aa7a325146e146f2c85dc5a76e143cdd83ee9688d23c4d47775539",
+        "match": true
+      },
+      {
+        "voice": "7/2",
+        "sourceDigest": "226b0043f70f5973b0e04b83e83a9bbdd9390f1c43cf04dea33b33d235c50974",
+        "match": true
+      },
+      {
+        "voice": "8/2",
+        "sourceDigest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "match": true
+      },
+      {
+        "voice": "5/1",
+        "sourceDigest": "b57dfcf71cc06ee3e5af14ad36526bd744d0e868ba154f5c47d64fe0e298f2b6",
+        "match": true
+      },
+      {
+        "voice": "6/1",
+        "sourceDigest": "55c55cbbd329ccbd0bc4be628d073eeac8bc6dd437d0c356c2f9ee5bf75368e1",
+        "match": true
+      },
+      {
+        "voice": "1/2",
+        "sourceDigest": "4c256ac4089f685d53aa50b48b7909210675a978a7ccf580b70726fe95986213",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 463
+  },
+  "clair-de-lune": {
+    "sourceSha256": "89e6e1bb6b2c437f735fb1b94042e75603fcb5dc73638a9651d21c3008c79fdc",
+    "keys": [
+      [
+        0,
+        -5,
+        "major"
+      ],
+      [
+        162.0,
+        4,
+        "minor"
+      ],
+      [
+        189.0,
+        -5,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "d3e0cc875201d809614f51195729854a3200f82458a0ff77096fc76c76aa3e69",
+        "match": true
+      },
+      {
+        "voice": "1/2",
+        "sourceDigest": "2cad1b5dc73ace556c8a2a4defb2ede30cf9aa621afb450f2bb55d9ae0d04361",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "087df42638ffcd1029a9ed91443c34a0f681ecd44a0cc0f301c7a4ceaa9afe05",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "a797923a73ff46c16953a8d2fa11105fa33859d24bacbf6903a6dfed22cdaaa0",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "f8308e9a9ecfa5d3c7f67041a05e2033fc05e7420b97376787e080136b438c14",
+        "match": false,
+        "limitation": "源谱部分和弦延音等语义尚未完全保留；不把此声部计入通过断言"
+      },
+      {
+        "voice": "6/1",
+        "sourceDigest": "d9df759ec12228643e4345378cdc9247d55cb6b19c138aaa0fbce333b31ca61e",
+        "match": true
+      },
+      {
+        "voice": "7/2",
+        "sourceDigest": "0e1aa983c4b0de6dca0bdb133541b3d8144d5d9acc894c417f49573ac17ce4b8",
+        "match": true
+      },
+      {
+        "voice": "2/2",
+        "sourceDigest": "37e8044cc261639698e7e8e8ac12c16e5caede23cf85b4ade117e4e0a271a043",
+        "match": true
+      },
+      {
+        "voice": "5/1",
+        "sourceDigest": "7e2af7cb74e6563465b378f0619402750a86c53c81372817dcbbf39c969a7d36",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 72
+  },
+  "blue-danube": {
+    "sourceSha256": "85e0591daf9f6db2933f2bf3f1f669442245b0322532443dabe5952ae14cf74e",
+    "keys": [
+      [
+        0,
+        3,
+        "major"
+      ],
+      [
+        66.0,
+        2,
+        "major"
+      ],
+      [
+        228.0,
+        3,
+        "major"
+      ],
+      [
+        291.0,
+        2,
+        "major"
+      ],
+      [
+        343.0,
+        -2,
+        "major"
+      ],
+      [
+        391.0,
+        2,
+        "major"
+      ],
+      [
+        439.0,
+        1,
+        "major"
+      ],
+      [
+        542.0,
+        -1,
+        "major"
+      ],
+      [
+        665.0,
+        3,
+        "major"
+      ],
+      [
+        860.0,
+        2,
+        "major"
+      ],
+      [
+        1011.0,
+        -1,
+        "major"
+      ],
+      [
+        1086.0,
+        2,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "2f0ecdab996510ffadd33d7b1304c60fdb4d3c1f7a059ad03a55db5c48027cda",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "0275354a60defceed740dd971f3d1f38c00feb85d90c522b0247071eff268f2e",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "92a5f9145825f56532fbecf31aa3e8b68502b944098a0993958707b581beb62b",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "3b44c20afd5aac11d0729097a778b95b715401cb45f95b4bdf70ae65a963b0e4",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 436
+  },
+  "elise": {
+    "sourceSha256": "809cd611d4a0cea177de64099f4a9f4e744754573c88c0778abd89c8d45b6851",
+    "keys": [
+      [
+        0,
+        0,
+        "minor"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "aebba1072389ceea9800014913dfe591fa98ed302eaf059e4396ddaf376c2663",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "35f649145f5485fcff2c62e8a493073af1590224a14ae894ded90fbfd35f06ce",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 106
+  },
+  "radetzky": {
+    "sourceSha256": "60359a436a70c7c59661535eb03d8c4219f01151ae270834f576d37dc4374e3e",
+    "keys": [
+      [
+        0,
+        2,
+        "major"
+      ],
+      [
+        208.0,
+        3,
+        "major"
+      ],
+      [
+        355.0,
+        2,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "a8ab4a18a64a13b7bc7e3ce8ee97e70919b9a07de4c6164c8a89cad25db94912",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "f4363b3f1cc0628d6feb2a3528e19605eb11c3be682b404a8f6e9e9c1c7e5f33",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 144
+  },
+  "arabesque": {
+    "sourceSha256": "8555ea96ae7cc0ddbbe6dba2eff3e476258d2dbc4b4bbc405b84171c36c6137a",
+    "keys": [
+      [
+        0,
+        4,
+        "major"
+      ],
+      [
+        152.0,
+        3,
+        "major"
+      ],
+      [
+        248.0,
+        0,
+        "major"
+      ],
+      [
+        280.0,
+        4,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "2/1",
+        "sourceDigest": "e5673338c94c9b17b1d03ec8e07d7e3783385826944e2c5531b75b4a0ac4ad7b",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "af56473cbb028ee640c19917113476c43894a1167958525bf3ec76d4cfd05922",
+        "match": true
+      },
+      {
+        "voice": "1/1",
+        "sourceDigest": "ea46f021e160af6cbe165d9c27ed67973a43dba282040e72ee6d4bdcfa6b143e",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "d46de70c0f9386de94108be8cace105c1214bc6b4f5a989e316d15af0ba339c0",
+        "match": true
+      },
+      {
+        "voice": "5/1",
+        "sourceDigest": "e44c613dadfde613a37cd98a92adf6fbf7a4688d24a732063836a901b60d67c0",
+        "match": true
+      },
+      {
+        "voice": "1/2",
+        "sourceDigest": "33d65d6b2696cc62d293d5b1317347dc468e6b6b98d2769535ca6122d357728f",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 107
+  },
+  "nocturne": {
+    "sourceSha256": "0a5bb51ceb2803b14644dc982599ee015f573a4f99c6ecedfc336cf6ba05d080",
+    "keys": [
+      [
+        0,
+        -3,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "ad36f16de910e9f33adeea097f3896c1942487611ba59b222a6936273bd8c4f7",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "8a20c6cdb39e831b7583d8bf0f5e5e84b0a86aeb867d34e07aee44c2711aca0f",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "02c7576da47091b5fcb347d9454237de601523d9c6c5073493fb0daee27c41cf",
+        "match": true
+      },
+      {
+        "voice": "7/2",
+        "sourceDigest": "3c49155069ab69f6ee60732745e66996fa84d221fc5af84ca679ca4a6ea7f15f",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 35
+  },
+  "canon": {
+    "sourceSha256": "9efed886ae050510711ebab9ccdd26b7d858e4ed630c28670e7174c84c73a077",
+    "keys": [
+      [
+        0,
+        2,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "eef05d8b3c84621b2722bf600f7c554de442c9f85ad7c5db18b84238284b8215",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "80e139e39c3b8f92713ebcf16d27c1ed98ddebe34c3cd8a66eb75aa5a13eafec",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "0250d4663d35da6bd338d049b22c8ff2f5ec4943da66f382769e87f7ca25221b",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 57
+  },
+  "barcarolle": {
+    "sourceSha256": "88e20d866207398ae88116b78edc1d8dfb470d7c2c712dda8bb236370c34bad0",
+    "keys": [
+      [
+        0,
+        2,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "25c78937d409518776893421229180c1d4804ad213181576e3124117a42fe6e2",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "5b5d96987cdd6ce1dcc41bd206289288e7149c333fa6d1555fd9d8a8385d5298",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "3c8dbde06273e191cc5b8490fcc9d4e326ef211469b8a0316cd57ccfd3854821",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 60
+  },
+  "gymnopedie": {
+    "sourceSha256": "05bdb928f786df771a07d6593670c904546c42c7c794fabc24cba348bd635caa",
+    "keys": [
+      [
+        0,
+        2,
+        "minor"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "7be63ec5ca8d9c284e0551459faa910a7e91914b804c3fd4a93706ffb707c57f",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "bed26e0c9931db37dcc0f643ddff1b74d5b097b81ee57ecbfda944ff9437f9bc",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "96f3cab91899a93c1855e9bfa0d2e8bf17205e512b020d12d772dda192dd5283",
+        "match": true
+      },
+      {
+        "voice": "7/2",
+        "sourceDigest": "8b3b72212731e026732e533e56498915e423ae0cb70bbc77ee9b42b598605824",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 47
+  },
+  "alla-turca": {
+    "sourceSha256": "13406328403a081ba02a54f2cc076e69dc6346228f49323735a7631c8b2c1b0c",
+    "keys": [
+      [
+        0,
+        0,
+        "minor"
+      ],
+      [
+        50.0,
+        3,
+        "major"
+      ],
+      [
+        134.0,
+        0,
+        "minor"
+      ],
+      [
+        184.0,
+        3,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "f39c9be9e40a49a562d1701b95394069eee6c67a5865b8dcd773effcc74e725b",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "9e127d139f9cf5da8a14481ccb8718306bd4cff3451371f26a780ae5da533333",
+        "match": true
+      },
+      {
+        "voice": "2/1",
+        "sourceDigest": "ad3c551adcf76ca44233e7f8738d19e6675842c4853c56fa5e18f874802de477",
+        "match": true
+      },
+      {
+        "voice": "3/1",
+        "sourceDigest": "a6c5e43d331e1c7d842a402465041bb3fd7dd30ba7a4ead840fda2a93dabe193",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 137
+  },
+  "moonlight": {
+    "sourceSha256": "32016b757e34642c5ec4bcc49788017dae8247ba5150be5c64991855c8c284a3",
+    "keys": [
+      [
+        0,
+        4,
+        "major"
+      ]
+    ],
+    "voices": [
+      {
+        "voice": "2/1",
+        "sourceDigest": "205a48f4c6a44a2230187d9ae39d97c98cdb48de8b83b435a5a5b29f328aadfb",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "3d69dfdb7b77c46acc5301b125de2f47eff1422eaba7606a13f75d5f440c1cad",
+        "match": true
+      },
+      {
+        "voice": "1/1",
+        "sourceDigest": "eb3c0e9ef9c4d412374bea40f9b36dc4a2459639bb69cda744ebb7828a49c7b8",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "ef2f1b1e7a8f3075bf70da3703a8956b07589ca90eca3a02b3b2303eff44f5ec",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 69
+  },
+  "wtc-prelude": {
+    "sourceSha256": "1bfe6a105c2285cf22eb13a0d0c3bd46cd8a6c39a7158ce0545d5e5662b55049",
+    "keys": [],
+    "voices": [
+      {
+        "voice": "1/1",
+        "sourceDigest": "4a759c9dbab185ed5f26b06b70ea1971d13f7cfaee8991a74514c0c476400003",
+        "match": true
+      },
+      {
+        "voice": "5/2",
+        "sourceDigest": "1aae0dac462ba3e78562318eba453668a365c428bff7e0da3dcf1b9d4dbc55e9",
+        "match": true
+      },
+      {
+        "voice": "6/2",
+        "sourceDigest": "59650aa67447bb889f639b3382b0dd980c805726a8a1868adc32a377d26f0a6a",
+        "match": true
+      }
+    ],
+    "sourceKind": "MusicXML",
+    "measureCount": 35
+  },
+  "nachtmusik": {
+    "sourceKind": "Mutopia MIDI",
+    "sourceSha256": "f8b6dc991df6e90e2e2e11d561ab2cf8fec47beda747c69984c3fef4b539506b",
+    "limitation": "逐声部与源 MIDI 导入结果完全一致；MIDI 不能证明音高拼写、小节写法与装饰音。"
+  },
+  "lullaby": {
+    "sourceKind": "Mutopia MIDI",
+    "sourceSha256": "0ca12af297a5b55228dff2428a157b2811ff3f4e88098ad4f9edce1e3964aef1",
+    "limitation": "逐声部与源 MIDI 导入结果完全一致；MIDI 不能证明音高拼写、小节写法与装饰音。"
+  }
+}

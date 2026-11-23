@@ -1,0 +1,70 @@
+.rhythm-pad {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  min-height: 72px;
+  margin-top: 10px;
+  border: 1px solid #c9bfa8;
+  border-radius: 10px;
+  background: #fffdf8;
+  font-size: 18px;
+  font-weight: 600;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.rhythm-pad:active:not(:disabled) { background: #efe7d4; }
+.rhythm-pad:disabled { color: #8a8170; }
+.rhythm-lane { display: block; max-width: 420px; margin-top: 8px; overflow: visible; }
+.rhythm-lane .rhythm-target { stroke: #3d3a33; stroke-width: 2; }
+.rhythm-lane .rhythm-beat { stroke: #b4aa94; stroke-width: 1; }
+.rhythm-lane circle { fill: #2f7d4f; }
+.rhythm-lane circle[data-verdict="early"], .rhythm-lane circle[data-verdict="late"] { fill: #b7791f; }
+.rhythm-lane circle[data-verdict="extra"] { fill: #b4412f; }
+.rhythm-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.rhythm-marks > li { padding: 1px 6px; border-radius: 6px; background: #e5f1e9; color: #1f5c39; }
+.rhythm-marks > li[data-verdict="early"], .rhythm-marks > li[data-verdict="late"] { background: #f6ecd6; color: #7a4f10; }
+.rhythm-marks > li[data-verdict="miss"] { background: #f6e1dc; color: #8a2f21; }
+.rhythm-latency {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.rhythm-latency output { min-width: 64px; text-align: center; font-variant-numeric: tabular-nums; }
+.rhythm-quiz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+  max-width: 420px;
+}
+.rhythm-quiz span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 32px;
+  padding: 0 6px;
+  border-radius: 8px;
+  background: #efe7d4;
+  color: #1c1916;
+  font-size: 13px;
+  flex-grow: var(--d);
+}
+.rhythm-quiz span[data-rest] {
+  background: #eeeae2;
+  color: #6b6458;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rhythm-quiz span { transition: none; }
+}

@@ -1,0 +1,40 @@
+.score-image-card {
+  position: relative;
+  max-width: 100%;
+  min-width: 240px;
+  padding: 8px 8px 28px;
+  border: 1px solid #d8d1c5;
+  border-radius: 12px;
+  background: #f7f3ea;
+}
+.score-image-viewport {
+  height: 100%;
+  overflow: auto;
+  background: #faf8f4;
+}
+.score-image-resize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 44px;
+  height: 28px;
+  cursor: nwse-resize;
+  touch-action: none;
+  color: #31594b;
+  border: 1px solid #b7ae9d;
+  border-radius: 8px 0 10px 0;
+  background: #f7f3ea;
+}
+.score-image-resize:focus-visible {
+  outline: 2px solid #31594b;
+  outline-offset: 2px;
+}
+
+/* Default: show the page at a tall usable height without dragging first. */
+.score-image-card:not([data-px-resized]) {
+  width: 100%;
+  height: min(70dvh, 880px);
+}
+.score-image-panel {
+  min-height: 0;
+}

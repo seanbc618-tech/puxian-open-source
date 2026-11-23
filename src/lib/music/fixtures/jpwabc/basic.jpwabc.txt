@@ -1,0 +1,10 @@
+// ************** JPW-ABC File Ver 1.0 (for JP-Word v5.50m) **************
+.Title
+Title = {中文合成练习}
+KeyAndMeters = {1=G,3/4}
+Expression = {♩=76}
+.Voice
+1. 2_ 3 | 0 4' 5, | #4 b7 #b4 |]
+.Words
+W1@1,1:春天{你好}
+W1@2,1:/山/水

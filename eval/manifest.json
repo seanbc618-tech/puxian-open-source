@@ -1,0 +1,114 @@
+{
+  "seed": 20261114,
+  "items": [
+    {
+      "id": "wtc-prelude",
+      "kind": "piano",
+      "source": "eval/generated/wtc-prelude.png",
+      "truth": "eval/truth/wtc-prelude.musicxml",
+      "ends": [
+        4,
+        8
+      ],
+      "license": "/**\n * C 大调前奏曲（巴赫）\n * 来源：Noctave CC0 1.0 MusicXML，与 Mutopia（Tobias Erbsland）一致，类型已放入公有领域。作品：巴赫平均律第一册前奏曲 BWV 846。https://www.mutopiaproject.org/ftp/BachJS/BWV846/wtk1-prelude1/\n */"
+    },
+    {
+      "id": "elise",
+      "kind": "piano",
+      "source": "eval/generated/elise.png",
+      "truth": "eval/truth/elise.musicxml",
+      "ends": [
+        1.5,
+        3
+      ],
+      "license": "/**\n * 致爱丽丝（贝多芬）\n * 来源：Noctave CC0 1.0 MusicXML，与 Mutopia（Stelios Samelis）一致，底本 Breitkopf & Härtel 1888 版。作品：贝多芬 Für Elise, WoO 59。https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=931\n */"
+    },
+    {
+      "id": "alla-turca",
+      "kind": "melody",
+      "source": "eval/generated/alla-turca.png",
+      "truth": "eval/truth/alla-turca.musicxml",
+      "ends": [
+        2,
+        4
+      ],
+      "license": "/**\n * 土耳其进行曲（莫扎特）\n * 来源：Noctave CC0 1.0 MusicXML，与 Mutopia（Rune Zedeler、Chris Sawer）一致，底本 IMSLP。作品：莫扎特钢琴奏鸣曲 K.331 第三乐章 Rondo Alla Turca。https://www.mutopiaproject.org/ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/\n */"
+    },
+    {
+      "id": "lullaby",
+      "kind": "melody",
+      "source": "eval/generated/lullaby.png",
+      "truth": "eval/truth/lullaby.musicxml",
+      "ends": [
+        3,
+        6
+      ],
+      "license": "/**\n * 摇篮曲（勃拉姆斯）\n * 来源：Mutopia 公有领域（2007/11/04-1037），人声与钢琴，底本 Indiana University Variations。作品：勃拉姆斯 Wiegenlied Op.49 No.4。https://www.mutopiaproject.org/ftp/BrahmsJ/O49/Wiegenlied/\n */"
+    },
+    {
+      "id": "c-major",
+      "kind": "piano",
+      "source": "eval/generated/c_major_simple.png",
+      "truth": "eval/truth/c-major.musicxml",
+      "ends": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "license": "feedback-r4 自制测试图；巴赫 PDF/PNG：Mutopia Tobias Erbsland 2011/09/12-5 Public Domain，见页脚与 GROUND_TRUTH.md"
+    },
+    {
+      "id": "bach-p1",
+      "kind": "piano",
+      "source": "eval/generated/bach_prelude_c_p-1.png",
+      "truth": "eval/truth/bach-p1.musicxml",
+      "ends": [
+        4,
+        8,
+        12
+      ],
+      "crop": [
+        0,
+        235,
+        1654,
+        540
+      ],
+      "license": "feedback-r4 自制测试图；巴赫 PDF/PNG：Mutopia Tobias Erbsland 2011/09/12-5 Public Domain，见页脚与 GROUND_TRUTH.md"
+    },
+    {
+      "id": "bach-p2",
+      "kind": "piano",
+      "source": "eval/generated/bach_prelude_c_p-2.png",
+      "truth": "eval/truth/bach-p2.musicxml",
+      "ends": [
+        4,
+        8,
+        12
+      ],
+      "crop": [
+        0,
+        65,
+        1654,
+        340
+      ],
+      "license": "feedback-r4 自制测试图；巴赫 PDF/PNG：Mutopia Tobias Erbsland 2011/09/12-5 Public Domain，见页脚与 GROUND_TRUTH.md"
+    },
+    {
+      "id": "twinkle-treble",
+      "kind": "melody",
+      "source": "eval/generated/xiaoxingxing_treble.png",
+      "truth": null,
+      "ends": null,
+      "license": "feedback-r4 自制测试图；巴赫 PDF/PNG：Mutopia Tobias Erbsland 2011/09/12-5 Public Domain，见页脚与 GROUND_TRUTH.md"
+    },
+    {
+      "id": "twinkle-jianpu",
+      "kind": "jianpu",
+      "source": "eval/generated/jianpu_twinkle.png",
+      "truth": null,
+      "ends": null,
+      "license": "feedback-r4 自制测试图；巴赫 PDF/PNG：Mutopia Tobias Erbsland 2011/09/12-5 Public Domain，见页脚与 GROUND_TRUTH.md"
+    }
+  ]
+}

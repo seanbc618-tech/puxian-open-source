@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>谱线</title>
+    <meta name="description" content="在浏览器里写简谱、五线谱、和弦谱和六线谱，用卷帘跟奏练习。谱存本机；识谱才上传。" />
+    <meta name="theme-color" content="#f7f3ea" />
+    <link rel="canonical" href="https://818189.xyz/" />
+    <meta property="og:site_name" content="谱线" />
+    <meta property="og:title" content="谱线" />
+    <meta property="og:description" content="在浏览器里写简谱、五线谱、和弦谱和六线谱，用卷帘跟奏练习。谱存本机；识谱才上传。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:url" content="https://818189.xyz/" />
+    <meta property="og:image" content="https://818189.xyz/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="谱线：让旋律，落在纸上。简谱、五线谱、和弦谱、六线谱与卷帘跟奏。" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="谱线" />
+    <meta name="twitter:description" content="在浏览器里写简谱、五线谱、和弦谱和六线谱，用卷帘跟奏练习。谱存本机；识谱才上传。" />
+    <meta name="twitter:image" content="https://818189.xyz/og-image.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <style>
+      /* First paint before the app bundle and stylesheet arrive; hidden once React fills #root. */
+      #root:not(:empty) + #boot { display: none; }
+      /* After the first successful paint, never show the splash again —
+         even if a render crash empties #root (Firefox JianpuRender.destroy). */
+      html[data-puxian-ready] #boot { display: none !important; }
+      html, body { margin: 0; background: #faf8f4; color: #1c1916; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      .boot { max-width: 1024px; margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 16px 40px; }
+      .boot-brand { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 500; padding-bottom: 20px; border-bottom: 1px solid #ddd6c8; }
+      .boot-line { height: 14px; border-radius: 7px; background: #eee8dc; margin-top: 14px; }
+      .boot-card { height: 120px; border-radius: 20px; background: #f7f3ea; border: 1px solid #ddd6c8; margin-top: 28px; }
+      .boot-status { margin-top: 18px; font-size: 14px; color: #6f675e; }
+      .boot-shimmer { animation: boot-pulse 1.2s ease-in-out infinite alternate; }
+      @keyframes boot-pulse { from { opacity: .55; } to { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .boot-shimmer { animation: none; } }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot" class="boot" aria-busy="true">
+      <div class="boot-brand">♪ 谱线</div>
+      <div class="boot-shimmer">
+        <div class="boot-line" style="width: 46%; height: 28px; margin-top: 36px"></div>
+        <div class="boot-line" style="width: 64%"></div>
+        <div class="boot-card"></div>
+        <div class="boot-card" style="height: 64px"></div>
+      </div>
+      <p class="boot-status">正在打开谱线…</p>
+    </div>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>

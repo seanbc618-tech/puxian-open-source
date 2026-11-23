@@ -1,0 +1,10 @@
+{
+	"appId": "tech.seanbc618.puxian",
+	"appName": "谱线",
+	"webDir": "dist-static",
+	"ios": {},
+	"server": {
+		"iosScheme": "capacitor"
+	},
+	"packageClassList": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "smt-grandstaff-2eb5a45-onnx17-v1",
+  "files": [
+    {
+      "name": "encoder.onnx",
+      "bytes": 25388661,
+      "sha256": "41545461d752c9e7b9b893b3c78c8ea301c42eea218696ce98b11cc05df23550"
+    },
+    {
+      "name": "decoder.onnx",
+      "bytes": 64916437,
+      "sha256": "8ed0e823dc37e7e6b1e640cd271a7d0f952de4bcca097e9de92d98e708e832d2"
+    },
+    {
+      "name": "vocabulary.json",
+      "bytes": 375582,
+      "sha256": "94f717e33be0633797f2b5f8432c3f9ea1e479c9cceb8d0aed2d24b6101fb73f"
+    }
+  ]
+}

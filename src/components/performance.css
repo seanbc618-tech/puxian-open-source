@@ -1,0 +1,180 @@
+.performance-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  padding: 4px 0;
+  flex-shrink: 0;
+  font-size: 13px;
+}
+.performance-bar button {
+  min-height: 44px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.performance-bar label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.performance-bar input {
+  width: 88px;
+  min-height: 44px;
+  accent-color: #a44825;
+}
+.performance-list {
+  width: 100%;
+  color: #6b6458;
+  overflow-wrap: anywhere;
+}
+.performance-hint {
+  color: #6b6458;
+}
+[data-full-score] .score-bar-check {
+  display: none;
+}
+[data-full-score] .score-stage {
+  touch-action: pan-y;
+  user-select: none;
+}
+@media (max-height: 500px) {
+  .performance-hint {
+    display: none;
+  }
+  .performance-bar {
+    gap: 0 6px;
+    padding: 0;
+  }
+  .performance-list {
+    width: auto;
+    max-width: 180px;
+  }
+}
+
+[data-full-score] [aria-label="简谱"] + p {
+  display: none;
+}
+
+/*
+ * Phone full screen: the stage is the point. Tighter frame, one-line title, shorter view tabs,
+ * and the page-turn controls on one row (the tap hint stays on wider screens), so about
+ * 100 px more of the score shows at 390×844.
+ */
+@media (max-width: 639px) {
+  .app-shell[data-full-score] #zone-score {
+    padding: 8px 10px 4px;
+    margin-top: 0;
+  }
+  .app-shell[data-full-score] .score-head {
+    gap: 4px;
+  }
+  .app-shell[data-full-score] .score-title-box {
+    flex: 0 0 30px;
+    height: 30px;
+  }
+  .app-shell[data-full-score] .score-title,
+  .app-shell[data-full-score] .score-title-fold {
+    /* !important: the title fitter sets an inline height of at least 44 px, which would hang
+       over the view tabs and swallow their taps (the title is read-only in full screen). */
+    height: 30px !important;
+    overflow: hidden;
+    padding: 3px 0;
+    font-size: 18px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .app-shell[data-full-score] .score-tools {
+    gap: 4px;
+  }
+  .app-shell[data-full-score] .score-tools .segmented[aria-label="谱面视图"] > button {
+    position: relative;
+    min-height: 36px;
+    height: 36px;
+  }
+  /* Looks 36 px, taps 44 px: the hit area reaches 4 px into the gaps above and below
+     (the rows are 4 px apart), so it never overlaps the title or the tools row. */
+  .app-shell[data-full-score] .score-tools .segmented[aria-label="谱面视图"] > button::before {
+    content: "";
+    position: absolute;
+    inset: -4px 0;
+  }
+  .app-shell[data-full-score] .performance-bar {
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 2px 0 0;
+  }
+  .app-shell[data-full-score] .performance-bar > button {
+    flex: 0 0 auto;
+    padding: 4px 8px;
+  }
+  .app-shell[data-full-score] .performance-bar label {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 4px;
+    white-space: nowrap;
+  }
+  .app-shell[data-full-score] .performance-bar input {
+    flex: 1 1 40px;
+    width: auto;
+    min-width: 40px;
+  }
+  .app-shell[data-full-score] .performance-hint {
+    display: none;
+  }
+  .app-shell[data-full-score] .performance-list {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* 练习面板「小工具」: four tools in a 2 × 2 grid instead of four full-width rows. */
+.practice-kit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+@media (min-width: 720px) {
+  .practice-kit-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.practice-kit-grid > .tool-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+  min-height: 56px;
+  height: auto;
+  padding: 8px 12px;
+  text-align: left;
+  white-space: normal;
+}
+.practice-kit-grid > .tool-button b { font-weight: 600; font-size: 15px; }
+.practice-kit-grid > .tool-button small { font-size: 12px; line-height: 1.3; opacity: 0.75; }
+
+/* r16: practice panel folds (练琴记录 below the week chart, 渐进加速). */
+.practice-fold > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
+}
+.practice-fold > summary::-webkit-details-marker { display: none; }
+.practice-fold > summary::after {
+  content: "展开";
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+.practice-fold[open] > summary::after { content: "收起"; }
+.practice-fold > summary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; border-radius: 8px; }
+[data-practice-log-more] > summary { font-size: 14px; color: var(--color-ink); }

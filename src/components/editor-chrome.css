@@ -1,0 +1,400 @@
+/* Editor chrome only (lazy with staffline-app). Cream paper, no first-screen stylesheet. */
+.app-shell:not([data-home-landing]) .feature-bar {
+  border-radius: 20px;
+  box-shadow: 0 1px 2px #1c19160a, 0 4px 12px #1c191608;
+  background: #eeeae2cc;
+}
+.app-shell:not([data-home-landing]) .feature-bar button {
+  border-radius: 16px;
+  transition: background-color .2s, color .2s, box-shadow .2s;
+}
+.app-shell:not([data-home-landing]) .feature-bar button[aria-selected="true"] {
+  background: var(--color-paper);
+  box-shadow: 0 1px 2px #1c191614;
+}
+.app-shell:not([data-home-landing]) .zone-panel {
+  background: #f7f3eae8;
+  box-shadow: 0 1px 2px #1c19160a, 0 4px 12px #1c191608;
+}
+.app-shell:not([data-home-landing]) .pressable {
+  border-radius: 999px;
+}
+.app-shell:not([data-home-landing]) .editor-actions > button,
+.app-shell:not([data-home-landing]) .editor-home {
+  border-radius: 999px;
+  background: #f7f3eaf2;
+  transition: background-color .2s, box-shadow .2s;
+}
+.app-shell:not([data-home-landing]) .editor-actions > button:hover,
+.app-shell:not([data-home-landing]) .editor-home:hover {
+  box-shadow: 0 1px 2px #1c191614;
+}
+.app-shell:not([data-home-landing]) .segmented {
+  border-radius: 999px;
+}
+.app-shell:not([data-home-landing]) .segmented > button {
+  border-radius: 999px;
+}
+.app-shell:not([data-home-landing]) .segmented > button[aria-pressed="true"],
+.app-shell:not([data-home-landing]) .segmented > button[aria-checked="true"] {
+  background: var(--color-paper);
+}
+.app-shell:not([data-home-landing]) .tool-button {
+  border-radius: 999px;
+}
+.app-shell:not([data-home-landing]) .tool-group {
+  border-radius: 16px;
+}
+@media (min-width: 640px) {
+  .app-shell:not([data-home-landing]) .transport {
+    border-radius: 999px;
+    box-shadow: 0 4px 16px #1c191614;
+    background: #f7f3eaf7;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-shell:not([data-home-landing]) .feature-bar button,
+  .app-shell:not([data-home-landing]) .pressable,
+  .app-shell:not([data-home-landing]) .editor-actions > button,
+  .app-shell:not([data-home-landing]) .editor-home {
+    transition: none;
+  }
+}
+
+/* ---- UI polish r3: calmer chrome, grouped tools, score as the one paper card ---- */
+/* Feature bar: one quiet track; the open panel is a raised white-cream pill with ink text. */
+.app-shell:not([data-home-landing]) .feature-bar {
+  gap: 2px;
+  padding: 4px;
+  background: #ece8dfb3;
+  box-shadow: inset 0 0 0 1px #ddd6c866;
+}
+.app-shell:not([data-home-landing]) .feature-bar button {
+  color: #5f584f;
+  font-weight: 500;
+  letter-spacing: .01em;
+}
+.app-shell:not([data-home-landing]) .feature-bar button[aria-selected="true"] {
+  background: #fffdf8;
+  color: var(--color-ink);
+  font-weight: 600;
+  box-shadow: 0 1px 2px #1c19161a, 0 2px 8px #1c19160d;
+}
+/* Header: brand left, light tinted actions right; 「返回主页」 reads as navigation, not another tool. */
+.app-shell:not([data-home-landing]) .editor-actions > button {
+  border-color: transparent;
+  background: #ece8dfb3;
+  font-weight: 500;
+}
+.app-shell:not([data-home-landing]) .editor-actions > button:hover { background: #e6e1d6; box-shadow: none; }
+.app-shell:not([data-home-landing]) .editor-home {
+  border-color: transparent;
+  background: transparent;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+.app-shell:not([data-home-landing]) .editor-home:hover { background: #1f3d3a0d; box-shadow: none; }
+/* The score is the one paper card: no hard outline, a soft lift instead. */
+.app-shell:not([data-home-landing]) #zone-score {
+  border-color: #ddd6c866;
+  border-radius: 22px;
+  box-shadow: 0 1px 2px #1c19160d, 0 10px 30px #1c19160a;
+}
+/* Tool panels: a lighter cream sheet (still paper, checked by verify) so the score card stays the focus. */
+.app-shell:not([data-home-landing]) .zone-panel {
+  border: 1px solid #ddd6c859;
+  border-radius: 22px;
+  background: #fbf8f1;
+  box-shadow: 0 1px 2px #1c19160a;
+}
+.app-shell:not([data-home-landing]) .zone-panel > h2 .zone-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+@media (min-width: 640px) { .app-shell:not([data-home-landing]) .zone-panel > .zone-help { margin-top: 2px; } }
+@media (min-width: 640px) { .app-shell:not([data-home-landing]) .zone-panel > .zone-content { margin-top: 12px; } }
+.app-shell:not([data-home-landing]) .zone-help > summary {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+/* Grouped settings (desktop): each group is a soft inset card with a clear title row. Phones keep
+   the flat hairline list so 44 px keys and the capped practice height are unchanged. */
+@media (min-width: 640px) {
+  .app-shell:not([data-home-landing]) .zone-panel:not(.practice-panel) .tool-group {
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: #f3eee3b3;
+  }
+  .app-shell:not([data-home-landing]) .zone-panel:not(.practice-panel) .tool-group + .tool-group {
+    margin-top: 10px;
+    padding-top: 12px;
+    border-top: 0;
+  }
+}
+@media (min-width: 640px) {
+  .app-shell:not([data-home-landing]) .tool-group-title { font-size: 15px; letter-spacing: .01em; }
+  .app-shell:not([data-home-landing]) .tool-group-title span { font-size: 12.5px; }
+}
+/* Segmented controls: the chosen segment is a white chip on a quiet track. */
+.app-shell:not([data-home-landing]) .segmented { background: #ece8dfcc; }
+.app-shell:not([data-home-landing]) .segmented > button[aria-pressed="true"],
+.app-shell:not([data-home-landing]) .segmented > button[aria-checked="true"] {
+  background: #fffdf8;
+  color: var(--color-ink);
+  box-shadow: 0 1px 2px #1c19161f, 0 1px 6px #1c19160d;
+}
+.app-shell:not([data-home-landing]) .tool-button:not([aria-pressed="true"]) { background: #ece8dfcc; }
+/* Practice kit tiles: cards with a two-line label, not stretched pills. */
+.app-shell:not([data-home-landing]) .practice-kit-grid > .tool-button { border-radius: 16px; }
+.app-shell:not([data-home-landing]) .practice-kit-grid > .tool-button small { opacity: .8; }
+/* Keypad keys match the card language. */
+.app-shell:not([data-home-landing]) .tap-pad { border-color: #ddd6c880; border-radius: 20px; }
+.app-shell:not([data-home-landing]) .tap-key { border-color: #ddd6c8b3; border-radius: 14px; box-shadow: 0 1px 2px #1c191612; }
+/* Phone transport: a frosted sheet with a hairline instead of a heavy rule. */
+@media (max-width: 639px) {
+  .app-shell:not([data-home-landing]) .transport {
+    background: #faf8f4eb;
+    border-top-color: #ddd6c880;
+    box-shadow: 0 -6px 24px #1c19160a;
+    -webkit-backdrop-filter: blur(18px);
+  }
+  .app-shell:not([data-home-landing]) .feature-bar button { font-size: clamp(11.5px, 3.3vw, 13px); }
+}
+
+/* Read-only piano roll and guitar tab views live only in the editor (moved off the first-screen sheet). */
+/* Read-only piano roll (score view). Cream paper, follows the practice loop palette. */
+.piano-roll { margin-top: 8px; }
+.piano-roll-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 6px;
+}
+.piano-roll-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+.piano-roll-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.piano-roll-swatch[data-voice="0"] { background: #1f3d3a; }
+.piano-roll-swatch[data-voice="1"] { background: #7a5c3e; }
+.piano-roll-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: 100%;
+}
+.piano-roll-scroll svg { display: block; max-width: none; }
+.piano-roll-key.is-white { fill: #f7f3ea; stroke: #ddd6c8; stroke-width: 0.5; }
+.piano-roll-key.is-black { fill: #1c1916; }
+.piano-roll-row.is-white { fill: #f7f3ea; }
+.piano-roll-row.is-black { fill: #efe8d8; }
+.piano-roll-key-label {
+  fill: var(--color-muted);
+  font-size: 8px;
+  font-family: var(--font-sans);
+}
+.piano-roll-bar { stroke: #ddd6c8; stroke-width: 1; }
+.piano-roll-bar.is-start { stroke: #cfc6b4; }
+.piano-roll-bar-label {
+  fill: var(--color-faint);
+  font-size: 10px;
+  font-family: var(--font-sans);
+}
+.piano-roll-note.is-sounding { stroke: #2a6fdb; stroke-width: 1.6; }
+.piano-roll-note.is-chosen { stroke: var(--color-accent); stroke-width: 1.4; }
+.piano-roll-playhead { stroke: #c45c26; stroke-width: 1.5; pointer-events: none; }
+
+.guitar-tab { margin-top: 8px; }
+.guitar-tab-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px;
+}
+.guitar-tab-legend {
+  display: inline-flex; align-items: center; gap: 6px; margin: 0; font-size: 12px; color: var(--color-muted);
+}
+.guitar-tab-swatch {
+  width: 10px; height: 10px; border-radius: 2px; display: inline-block;
+}
+.guitar-tab-swatch[data-voice="0"] { background: #1f3d3a; }
+.guitar-tab-swatch[data-voice="1"] { background: #7a5c3e; }
+.guitar-tab-note > summary { cursor: pointer; min-height: 32px; display: flex; align-items: center; width: fit-content; }
+.guitar-tab-note, .guitar-tab-miss {
+  margin: 0 0 8px; font-size: 12px; line-height: 1.5; color: var(--color-muted);
+}
+.guitar-tab-miss { color: var(--color-warn, #8a3b12); }
+.guitar-tab-scroll {
+  overflow-x: auto; overflow-y: hidden; max-width: 100%;
+}
+.guitar-tab-scroll svg { display: block; max-width: none; }
+.guitar-tab-string { stroke: #1c1916; stroke-width: 1; }
+.guitar-tab-string-label {
+  font-size: 11px; fill: #1c1916; font-family: var(--font-sans);
+}
+.guitar-tab-bar { stroke: #cfc6b4; stroke-width: 1; }
+.guitar-tab-bar.is-start { stroke: #1c1916; stroke-width: 1.4; }
+.guitar-tab-bar-label {
+  font-size: 10px; fill: #6b6458; font-family: var(--font-sans);
+}
+.guitar-tab-chord {
+  font-size: 14px; font-weight: 600; fill: #a44825; font-family: var(--font-sans);
+}
+.guitar-tab-position {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #3f3a34;
+}
+.guitar-tab-position select {
+  min-height: 44px;
+  min-width: 9.5rem;
+  padding: 0 10px;
+  border: 1px solid #d9d0c3;
+  border-radius: 12px;
+  background: #fffdf8;
+  color: #1c1916;
+  font: inherit;
+}
+.guitar-tab-fret.is-sounding text { stroke: #2a6fdb; stroke-width: 0.4; }
+.guitar-tab-fret.is-chosen text { fill: var(--color-accent); }
+.guitar-tab-playhead { stroke: #c45c26; stroke-width: 1.5; pointer-events: none; }
+
+/* Phone entry puts the playable controls first in the scrolling sheet. */
+@media (max-width: 639px) {
+  .app-shell[data-tap-dock] #zone-input > .zone-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .app-shell[data-tap-dock] #zone-input > .zone-content > .mt-3 { display: contents; }
+  .app-shell[data-tap-dock] #zone-input .tap-dock {
+    position: static;
+    order: -1;
+    margin-bottom: 12px;
+  }
+  .app-shell[data-tap-dock] .tap-durations > button { min-width: 44px; padding-inline: 7px; }
+  .app-shell[data-tap-dock] .tap-pad { padding: 10px; }
+}
+.export-list { min-width: 0; }
+.export-list li { flex-wrap: wrap; min-width: 0; }
+.export-list li > button { max-width: 100%; min-width: 0; white-space: normal; }
+.export-list li > span { flex: 1 1 12rem; min-width: 0; overflow-wrap: anywhere; }
+#zone-play, #zone-play code, #zone-play select { max-width: 100%; }
+#zone-play code { overflow-wrap: anywhere; }
+.app-shell:not([data-home-landing]) .transport-edit { padding: 0; width: 44px; }
+.app-shell:not([data-home-landing]) .transport-edit svg { width: 18px; height: 18px; }
+.app-shell:not([data-home-landing]) .tap-pad > [role="status"] { font-size: 12px; line-height: 1.7; }
+@media (max-width: 639px) {
+  .app-shell[data-tap-dock] #zone-input > .zone-help { display: none; }
+  .app-shell[data-tap-dock] #zone-input > .zone-content { margin-top: 0; }
+  .app-shell[data-tap-dock]:not([data-home-landing]) {
+    padding-bottom: calc(120px + env(safe-area-inset-bottom));
+  }
+  .app-shell[data-editor-layout="workspace"][data-tap-dock]:not([data-full-score]) > #zone-input {
+    flex: 1 1 auto;
+    max-height: none;
+    min-height: 280px;
+  }
+  .app-shell[data-editor-layout="workspace"][data-tap-dock]:not([data-full-score]) #zone-score {
+    flex: 0 1 auto;
+    min-height: 120px;
+    flex-basis: 140px;
+  }
+  .dictation-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    margin-top: 8px;
+    padding: 8px 0 4px;
+    background: #faf8f4;
+  }
+  .app-shell[data-full-score] button[aria-label="琴键 收起"],
+  .app-shell[data-full-score] button[aria-label="琴键 展开"] {
+    margin-left: 12px;
+  }
+}
+
+
+/* Workspace layout (lazy): score takes most of the viewport; tools sit in tabs
+   and, on wide desktops, a right-hand drawer. Stacked layout is kept at the
+   official 1100/390/320 walk so notation stays above the tool panel. */
+.app-shell[data-editor-layout="workspace"] {
+  max-width: min(1600px, calc(100% - 24px));
+  width: 100%;
+}
+@media screen {
+  .app-shell[data-editor-layout="workspace"]:not([data-full-score]) #zone-score {
+    flex: 1 1 auto;
+    flex-basis: auto;
+    min-height: min(52dvh, calc(100dvh - 16rem));
+    max-height: none;
+  }
+  .app-shell[data-editor-layout="workspace"]:not([data-full-score]) .score-stage {
+    min-height: 0;
+    flex: 1 1 auto;
+  }
+  /* Do not let the official panel min-height steal the score. */
+  @media (min-width: 640px) and (min-height: 701px) {
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) .zone-panel,
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) .score-image-panel {
+      min-height: 120px;
+      max-height: min(28dvh, 260px);
+      overflow: auto;
+      overscroll-behavior: contain;
+    }
+  }
+  @media (max-width: 639px) {
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) #zone-score {
+      min-height: min(48dvh, calc(100dvh - 16rem));
+    }
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) > .zone-panel,
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) > .score-image-panel {
+      flex: 0 1 auto;
+      min-height: 0;
+      max-height: min(28dvh, 240px);
+      overflow: auto;
+    }
+  }
+  /* Wide preview (Mini / desktop): tools as a right-hand drawer. Official
+     unobscured-notation walk uses 1100px and stays stacked. */
+  @media (min-width: 1200px) and (min-height: 701px) {
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 400px);
+      grid-template-rows: auto auto auto minmax(0, 1fr);
+      column-gap: 10px;
+      height: 100dvh;
+    }
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) > * { grid-column: 1 / -1; }
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) > #zone-score {
+      grid-column: 1;
+      grid-row: -2 / -1;
+      min-height: 0;
+      height: 100%;
+    }
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) > .zone-panel,
+    .app-shell[data-editor-layout="workspace"]:not([data-full-score]) > .score-image-panel {
+      grid-column: 2;
+      grid-row: -2 / -1;
+      min-height: 0;
+      max-height: none;
+      height: 100%;
+      overflow: auto;
+      overscroll-behavior: contain;
+    }
+    .app-shell[data-editor-layout="workspace"][data-image-panel]:not([data-full-score]) > .zone-panel:not(.score-image-panel) {
+      display: none;
+    }
+    .app-shell[data-readonly][data-editor-layout="workspace"]:not([data-full-score]) > #zone-score {
+      grid-column: 1 / -1;
+    }
+  }
+}
