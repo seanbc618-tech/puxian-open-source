@@ -62,6 +62,8 @@ export function quantizeMidi(raw: TimedMidiNote[], division: number, bar: number
     arpeggio?: boolean;
     cell?: number;
     anchor?: number;
+    tripletStart?: boolean;
+    tripletSpan?: number;
   }[] = [];
   for (const n of [...raw].sort((a, b) => a.start - b.start || b.midi - a.midi)) {
     const start = n.start / division,
@@ -141,6 +143,8 @@ export function quantizeMidi(raw: TimedMidiNote[], division: number, bar: number
       if (intact && Math.max(...errors) <= cell * 0.2 && rms < binary * 0.65) {
         for (let k = 0; k < 3; k++)
           Object.assign(groups[i + k], { anchor: anchor + k * cell, cell });
+        groups[i].tripletStart = true;
+        groups[i + 2].tripletSpan = 3 * cell;
         report.triplets++;
         i += 2;
         break;
@@ -148,6 +152,7 @@ export function quantizeMidi(raw: TimedMidiNote[], division: number, bar: number
     }
   }
   const notes: ScoreNote[] = [];
+  let tripletStart = 0;
   let cursor = 0;
   const snap = (x: number) => Math.round(x / grid) * grid;
   const append = (pitches: number[], start: number, end: number, gracePitch?: number, arpeggio = false) => {
@@ -175,6 +180,7 @@ export function quantizeMidi(raw: TimedMidiNote[], division: number, bar: number
       return;
     }
     if (start > cursor) append([], cursor, start);
+    if (g.tripletStart) tripletStart = notes.length;
     let end = g.cell
       ? start + Math.max(1, Math.round((g.end - g.start) / g.cell)) * g.cell
       : Math.max(start + grid, snap(g.end));
@@ -205,6 +211,12 @@ export function quantizeMidi(raw: TimedMidiNote[], division: number, bar: number
       }
     }
     append(kept, start, end, g.gracePitch, g.arpeggio);
+    if (g.tripletSpan !== undefined) {
+      // Keep the exact remainder after snapping, including any bar splits.
+      const last = notes.length - 1;
+      const preceding = notes.slice(tripletStart, last).reduce((sum, note) => sum + note.dur, 0);
+      notes[last].dur = g.tripletSpan - preceding;
+    }
     cursor = end;
   });
   return { notes, report };
